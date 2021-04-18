@@ -1,7 +1,15 @@
+h1 {
+	color:lightblue;
+}
+p{
+	color: grey;
+}
+
 body {
 	background: url(./img/fondo6.jpg);
 	background-size: cover;
 }
+
 
 select {
    -webkit-appearance:none;
