@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/prog2.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/prog2.css">
     <title> Ejercicio 4 </title>
     <meta charset="utf-8">
   </head>
@@ -24,6 +24,6 @@
         </form>
       </div>
     </div>
-    
+
   </body>
 </html>

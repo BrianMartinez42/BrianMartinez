@@ -1,0 +1,50 @@
+body {
+	background: url(./img/fondo9.jpg);
+	background-size: cover;
+}
+
+.boton1{
+  text-decoration: none;
+  padding: 3px;
+  font-weight: 6000;
+  font-size: 15px;
+  color: #FFFFFF;
+  background-color: #4f4f4f;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+header{
+  width: 100%;
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0,.3);
+}
+
+.contenedor__title /*IMPLEMENTAR METODOLOGIA BEM*/ {
+  margin-left: 30px;
+  font-size: 30px;
+	color: black;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.inp{
+  box-shadow: 0;
+  border: 2;
+  background-color: rgba(255, 255, 255, .1);
+  width: 25%;
+  height: 35px;
+  border: solid 2px #C0C0C0;
+  font-size: 15px;
+  color: black;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+  text-align: left;
+  transition: all 250ms ease;
+}

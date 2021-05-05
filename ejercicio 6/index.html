@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/prog.css">
+    <title>Ejercicio 6</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="contenedor__title">Formulario</h1>
+    </header>
+    <form method="POST" action="ejercicio6.php">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label>Nombre</label>
+          <input type="text" class="form-control" placeholder="Nombre..." name="Nombre">
+        </div>
+        <div class="form-group col-md-6">
+          <label>Apellido</label>
+          <input type="text" class="form-control" placeholder="Apellido..." name="Apellido">
+        </div>
+        <div class="form-group col-md-6">
+          <label>DNI</label>
+          <input type="text" class="form-control" placeholder="DNI..." name="DNI">
+        </div>
+        <div class="form-group col-md-6">
+          <label>Fecha de Nacimiento</label>
+          <input type="date" class="form-control" name="Fecha-Nac">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label>Correo Electrónico</label>
+          <input type="email" class="form-control" placeholder="nombre@ejemplo.com" name="Correo">
+        </div>
+        <div class="form-group col-md-4">
+          <label>Provincia</label>
+          <select class="form-control" name="Provincia">
+            <option selected disabled>Elegir...</option>
+            <option>Buenos Aires</option>
+            <option>Córdoba</option>
+            <option>Entre Rios</option>
+            <option>Santa Fe</option>
+            <option>Formosa</option>
+          </select>
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">¿Es donante?</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radiob" value="option1">
+              <label class="form-check-label" name="Radio1" value="Si">
+                Sí
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radiob" value="option2">
+              <label class="form-check-label" name="Radio2" value="No">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Acepto los términso y condiciones
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </body>
+</html>
