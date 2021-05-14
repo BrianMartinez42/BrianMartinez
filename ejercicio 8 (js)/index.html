@@ -29,7 +29,7 @@
 
     <hr />
     <div style="width: auto; height: auto; text-align: center; padding-top: 10px;">
-        <select onchange="alert(numeros.value)" id="numeros" name="numeros" style="width: 100px;">
+        <select name="numeros" style="width: 100px;">
             <option value="1">uno</option>
             <option value="2">dos</option>
             <option value="3">tres</option>
@@ -45,7 +45,7 @@
 
     <div style="width: auto; height: auto; text-align: center; padding-top: 10px;">
         <input type="number" name="valor1"> + <input type="number" name="valor2"> = <input type="number" name="resultado"><br>
-        <button name="suma">Sumar</button>
+        <button onclick="sumar()" name="suma">Sumar</button>
     </div>
     <hr />
 
