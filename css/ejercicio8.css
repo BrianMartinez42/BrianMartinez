@@ -1,0 +1,11 @@
+.header{
+  width: 100%;
+  color: #FFFFFF;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0,.3);
+}

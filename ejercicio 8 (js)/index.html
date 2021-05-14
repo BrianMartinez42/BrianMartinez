@@ -17,19 +17,19 @@
 
 
         <div style="width: auto; height: auto; text-align: center;">
-            <h1 id="texto1" onmouseover="style.color = 'cyan'">TEXTO 1</h1>
+            <h1 id="texto1" onmouseover="style.color = 'cyan'" onmouseout="style.color = 'white'">TEXTO 1</h1>
         </div>
         <hr />
-        <select onchange="alert(colores.value)" name="colores" id="colores" style="width: 100px;">
+        <select onchange="alert(this.value)" name="colores" id="colores" style="width: 100px;">
             <option value="amarillo">Amarillo</option>
-            <option  value="azul">Azul</option>
+            <option value="azul">Azul</option>
             <option value="rojo">Rojo</option>
         </select>
     </div>
 
     <hr />
     <div style="width: auto; height: auto; text-align: center; padding-top: 10px;">
-        <select name="numeros" style="width: 100px;">
+        <select onchange="alert(numeros.value)" id="numeros" name="numeros" style="width: 100px;">
             <option value="1">uno</option>
             <option value="2">dos</option>
             <option value="3">tres</option>
@@ -44,7 +44,7 @@
     <hr />
 
     <div style="width: auto; height: auto; text-align: center; padding-top: 10px;">
-        <input type="number" name="valor1"> + <input type="number" name="valor2"> = <input type="number" name="resultado"><br>
+        <input type="number" name="valor1" id="valor1"> + <input type="number" name="valor2" id="valor2"> = <input type="number" name="resultado" id="resultado"><br>
         <button onclick="sumar()" name="suma">Sumar</button>
     </div>
     <hr />
