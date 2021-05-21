@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href='../css/ejercicio8.css'>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="global">
+      <h1 class="global__titulo">Selectores DOM</h1><br>
+      <h1 class="global__texto1" id="texto1" onmouseover="style.color = 'cyan'" onmouseout="style.color = '#222222'">TEXTO 1</h1>
+      <hr>
+      <div class="global__select-container">
+        <select onchange="alert(this.value)" class="global__select sombra" name="colores" id="colores">
+          <option value="amarillo">Amarillo</option>
+          <option value="azul">Azul</option>
+          <option value="rojo">Rojo</option>
+        </select>
+        <select onchange="alert(this.value)" class="global__select sombra" name="numeros" id="numeros">
+          <option value="1">Uno</option>
+          <option value="2">Dos</option>
+          <option value="3">Tres</option>
+        </select>
+      </div>
+      <hr>
+      <div class="global__textarea-container">
+        <textarea ondblclick="alert(this.value)" class="global__textarea sombra" id="textarea">Esto es un ejercicio practico de programacion II</textarea>
+      </div>
+      <hr>
+      <div class="global__sumador-container">
+          <input  class="global__sumador sombra" type="number" name="valor1" id="valor1"> + <input class="global__sumador sombra" type="number" name="valor2" id="valor2"> = <input class="global__sumador sombra" type="number" name="resultado" id="resultado"><br>
+          <button class="global__boton "onclick="sumar()" name="suma">Sumar</button>
+      </div>
+      <hr>
+      <div class="global__divisor" id="divisor">
+        Esto es un DIV
+      </div>
+      <hr>
+    </div>
+    <script src="js/ajustes.js"></script>
+  </body>
+</html>

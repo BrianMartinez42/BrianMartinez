@@ -1,11 +1,94 @@
-.header{
+*{
+	margin: 2.5px;
+}
+body {
+	background: url(./img/fondo8.jpg);
+	background-size: cover;
+}
+
+.global__titulo{
+  display: inline-block;
+	margin-top: 10px;
+  height: 50px;
   width: 100%;
-  color: #FFFFFF;
-  display: flex;
+  background-color: rgba(50, 50, 50, 0.6);
   text-align: center;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  background-color: rgba(0, 0, 0,.3);
+  color: #222222;
+  font-family: sans-serif;
+}
+
+.global__texto1{
+  text-align: center;
+	margin-top: 10px;
+  color: #222222;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.global__sumador-container{
+  text-align: center;
+}
+
+.global__sumador{
+  background-color: rgba(50, 50, 50, 0.6);
+  color: white;
+  border-radius: .25em;
+}
+
+.global__textarea-container{
+  text-align: center;
+}
+
+.global__textarea{
+  background-color: rgba(50, 50, 50, 0.6);
+  color: white;
+  width: 200px;
+  height: 100px;
+  font-family: monospace;
+  border-radius: .25em;
+}
+
+.global__select-container{
+  text-align: center;
+}
+
+.global__select{
+  outline:0;
+  box-shadow:none;
+  border:0!important;
+  background-image: none;
+  flex: 1;
+  color:#fff;
+  cursor:pointer;
+  text-align: center;
+  width: 250px;
+  height: 35px;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: sans-serif;
+	background: rgba(50, 50, 50, 0.6);
+  border-radius: .25em;
+}
+
+.global__divisor{
+  height: auto;
+  width: 100%;
+  color: #222222;
+  font-family: sans-serif;
+}
+
+.global__boton {
+  display: inline-block;
+  color: #dddddd;
+  background-color: #555555;
+  padding: 7.5px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 10px;
+  border-radius: 2px;
+}
+
+.sombra{
+  box-shadow: 5px 5px 5px 0 #C0C0C0;
 }
