@@ -3,15 +3,21 @@ body {
 	background-size: cover;
 }
 
+.cuerpo{
+	background: url(./img/fondo8.jpg);
+	background-size: cover;
+}
+
 .boton1{
   text-decoration: none;
   padding: 3px;
   font-weight: 6000;
   font-size: 15px;
   color: #FFFFFF;
-  background-color: #4f4f4f;
-  border-radius: 4px;
-  border: 1px solid black;
+  background-color: rgba(0, 0, 0,.5);
+  border-radius: .25em;
+  border: 1px solid white;
+	transition: all 0.5s;
 }
 
 header{
@@ -22,13 +28,13 @@ header{
   align-items: center;
   align-content: center;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0,.3);
+  background-color: rgba(0, 0, 0,.5);
 }
 
 .contenedor__title /*IMPLEMENTAR METODOLOGIA BEM*/ {
   margin-left: 30px;
   font-size: 30px;
-	color: black;
+	color: #FFFFFF;
   font-family: 'Libre Baskerville', serif;
 }
 
@@ -47,4 +53,30 @@ header{
 	border-bottom-left-radius: 5px;
   text-align: left;
   transition: all 250ms ease;
+}
+
+.ej9__textarea{
+  background-color: rgba(50, 50, 50, 0.5);
+  color: white;
+  width: 100%;
+  height: 100px;
+  font-family: monospace;
+  border-radius: .25em;
+	transition: all 0.5s;
+}
+
+.ej9__textarea:hover{
+color: black;
+background-color: rgba(200, 200, 200,.5);
+border: 2px solid #505050;
+}
+
+.boton1:hover{
+	color: black;
+	background-color: rgba(200, 200, 200,.5);
+	border: 1px solid #505050;
+}
+
+.contenedor__ej9{
+	margin: 10px;
 }

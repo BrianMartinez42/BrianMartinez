@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/prog.css">
+    <title>Ejercicio 9</title>
+  </head>
+  <body class="cuerpo">
+    <header>
+      <h1 class="contenedor__title">Ejercicio 9: Malipular Arreglo</h1>
+    </header>
+    <div class="contenedor__ej9">
+      <hr>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input class="boton1" type="submit" id="create" value="Crear Arreglo" onclick="CrearArray()">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="boton1" type="submit" id="print" value="Mostrar Arreglo" onclick="MostrarArray()">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="boton1" type="text" id="principio" name="principio" value="" placeholder="Ingresar nombre">
+          <input class="boton1" type="submit" id="bAddFirst" value="Agregar al principio" onclick="principio()">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="boton1" type="text" id="final" name="final" value="" placeholder="Ingresar nombre">
+          <input class="boton1" type="submit" id="bAddLast" value="Agregar al final" onclick="final()">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="boton1" type="submit" id="sort1" value="Ordenar" onclick="ordenAZ()">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="boton1" type="submit" id="sort2" value="Orden Inverso" onclick="ordenZA()">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="boton1" type="submit" id="Cecilia" value="Cecilia" onclick="Cecilia()">
+        </div>
+        <div class="form-group col-md-6">
+        <input class="boton1" type="submit" id="RyA" value="Roberto y Amalia" onclick="RyA()">
+        </div>
+      </div>
+      <textarea id="myArray" class="ej9__textarea"></textarea>
+    </div>
+    <script src="js/ejercicio9.js"></script>
+  </body>
+</html>
