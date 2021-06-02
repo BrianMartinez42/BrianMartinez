@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/prog.css">
+  <title>Ejercicio 10</title>
+</head>
+<body class="cuerpo">
+  <header>
+    <h1 class="contenedor__title">Ejercicio 10: Select Dinámico con Ajax</h1>
+  </header>
+  <br>
+  <div class="">
+    <span class="mi-span">Elige <b>País</b>:</span>
+    <select class="mi-select" id='pais' onchange="ajax()">
+      <option value="" selected disabled>Seleccione Pais</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Uruguay">Uruguay</option>
+    </select>
+    <span class="mi-span">Elige <b>Departamento</b>:</span>
+    <select class="mi-select" id="provincias">
+      <option value="">...</option>
+    </select>
+    <br>
+  </div>
+  <script src="js/ejercicio10.js"></script>
+</body>
+</html>
