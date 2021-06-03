@@ -6,7 +6,7 @@
 		<link rel=stylesheet type=text/css href=../css/prog2.css>
 		<title>Ejercicio 1 </title>
 	</head>
-	<body>
+	<body style="color:#FFF;">
 		<?php
 
 		  $s1 = 39;

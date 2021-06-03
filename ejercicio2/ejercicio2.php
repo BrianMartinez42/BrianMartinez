@@ -6,7 +6,7 @@
 		<link rel=stylesheet type=text/css href=../css/prog2.css>
 		<title>Ejercicio 2</title>
 	</head>
-	<body>
+	<body style="color:#FFF;">
 		<?php
 		  for ($i=1; $i < 11; $i++) {
 		    echo "$i"."\n<br>";

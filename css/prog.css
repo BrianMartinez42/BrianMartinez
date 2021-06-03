@@ -1,10 +1,10 @@
 body {
-	background: url(./img/fondo9.jpg);
+	background: url(../img/fondo9.jpg);
 	background-size: cover;
 }
 
 .cuerpo{
-	background: url(./img/fondo8.jpg);
+	background: url(../img/fondo8.jpg);
 	background-size: cover;
 }
 
