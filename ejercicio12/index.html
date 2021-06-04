@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/prog.css">
+    <title>Ejercicio 12</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="contenedor__title">Ejercicio 12: API</h1>
+    </header>
+    <div class="container my-5 text-center">
+      <button class="btn btn-danger w-100" onclick="traer()" name="button">Obtener</button>
+      <div class="mt-5" id="contenido">
+
+      </div>
+    </div>
+
+    <script>
+      var contenido = document.querySelector('#contenido')
+      function traer() {
+        fetch('texto.txt')
+        .then(data => data.text())
+        .then(data =>{
+          console.log(data)
+          contenido.innerHTML = '${data}'
+        })
+      }
+    </script>
+  </body>
+</html>
