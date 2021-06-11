@@ -11,7 +11,7 @@ formulario.addEventListener('submit', function(e){
   console.log(datos.get('usuario'))
   console.log(datos.get('pass'))
 
-  fetch('post.php',{
+  fetch('./php/post.php',{
     method: 'POST',
     body: datos
   })
