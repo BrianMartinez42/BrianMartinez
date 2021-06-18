@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/prog.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script> <!-- El script de LEAFLET -->
+  	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" /> <!-- Estilo de LEAFLET -->
+    <title>Ejercicio 14</title>
+
+  </head>
+  <body>
+    <header>
+      <h1 class="contenedor__title">Ejercicio 14: Geolocalizador con Random User</h1>
+    </header>
+    <div class="container my-5 text-left" class="contenido">
+      <button class="btn btn-outline-dark w-100" onclick="traer()" name="button">Obtener</button>
+      <div class="mt-5 contenido" id="contenido">
+      </div>
+      <div class="container__mapa">
+        <div class="mapa" id="map"></div>
+        <div id="weathermap"></div>
+      </div>
+    </div>
+    <script src="js/geolocalizador.js"></script>
+  </body>
+</html>

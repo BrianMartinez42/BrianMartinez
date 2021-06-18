@@ -9,8 +9,8 @@ function traer() {
       <p>Nombre: ${data.results['0'].name.first} </p>
       <p>Apellido: ${data.results['0'].name.last} </p>
       <p>Género: ${data.results['0'].gender}</p>
-      <p>Pais: ${data.results['0'].location.country}</p>
-      <p>Telefono: ${data.results['0'].phone}</p>
+      <p>País: ${data.results['0'].location.country}</p>
+      <p>Teléfono: ${data.results['0'].phone}</p>
       <p>Email: ${data.results['0'].email}</p>
     `
   })
