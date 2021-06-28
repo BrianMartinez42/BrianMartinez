@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/prog.css">
+    <title>Ejercicio 15</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="contenedor__title">Ejercicio 15: API Dolar Argentina</h1>
+    </header>
+    <div class="contenido-dolar">
+      <input type="submit" class="boton-dolar-oficial" name="" value="Dolar Oficial" id="" onclick="get_dolar_oficial()">
+      <div class="contenido-dolar__oficial" id="dolar-oficial"></div>
+      <br>
+      <input type="submit" class="boton-dolar-blue" name="" value="Dolar Blue" id="" onclick="get_dolar_blue()">
+      <div class="contenido-dolar__blue" id="dolar-blue"></div>
+      <br>
+      <input type="submit" class="boton-dolar-turista" name="" value="Dolar Turista" id="" onclick="get_dolar_turista()">
+      <div class="contenido-dolar__turista" id="dolar-turista"></div>
+    </div>
+
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous">
+      </script>
+    <script src="js/dolar-actual.js" charset="utf-8"></script>
+  </body>
+</html>
