@@ -10,6 +10,9 @@
     <header>
       <h1 class="contenedor__title">Ejercicio 15: API Dolar Argentina</h1>
     </header>
+    <div class="" id='error-msg' style="text-align: center; visibility: hidden">
+      Se ha producido un error
+    </div>
     <div class="contenido-dolar">
       <input type="submit" class="boton-dolar-oficial" name="" value="Dolar Oficial" id="" onclick="get_dolar_oficial()">
       <div class="contenido-dolar__oficial" id="dolar-oficial"></div>
@@ -20,6 +23,12 @@
       <input type="submit" class="boton-dolar-turista" name="" value="Dolar Turista" id="" onclick="get_dolar_turista()">
       <div class="contenido-dolar__turista" id="dolar-turista"></div>
     </div>
+    <div class="text-center">
+      <div class="spinner-border text-secondary" role="status" id='div-pinner' style="visibility: hidden">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
 
     <script
 			  src="https://code.jquery.com/jquery-3.6.0.js"
