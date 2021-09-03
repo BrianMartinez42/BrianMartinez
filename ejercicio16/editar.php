@@ -25,6 +25,7 @@ if(isset($_POST['update']))
 		if(empty($email)) {
 			echo "<font color='red'>Email field is empty.</font><br/>";
 		}
+
 	} else {
 		//actualizar la tabla
 		$result = mysqli_query($mysqli, "UPDATE users SET name='$name',age='$age',email='$email' WHERE id=$id");

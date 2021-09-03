@@ -8,7 +8,7 @@
 
   <body>
     <header>
-  		<h1 class="contenedor__title">Alta</h1>
+  		<h1 class="contenedor__title">Registro</h1>
   	</header>
   	<br/>
   	<a href="index.php" class="button-grey">Inicio</a>
@@ -16,17 +16,21 @@
   		<form action="alta.php" method="post" name="form1">
   			Nombre
   			<div class="form-group">
-  				<input class="form-control" type="text" name="name" autofocus  value="">
+  				<input class="form-control" type="text" name="name" autofocus>
   			</div>
   			Edad
   			<div class="form-group">
-  				<input class="form-control" type="text" name="age"  value="">
+  				<input class="form-control" type="text" name="age">
   			</div>
   			Email
   			<div class="form-group">
-  				<input class="form-control" type="text" name="email"  value="">
+  				<input class="form-control" type="text" name="email">
   			</div>
-  			<input class="button-accept" type="submit" name="Submit" value="Agregar">
+        Contraseña
+        <div class="form-group">
+          <input class="form-control" type="password" name="pass">
+        </div>
+  			<input class="button-accept" type="submit" name="Submit" value="Registrar">
   		</form>
   	</div>
   </body>

@@ -20,7 +20,7 @@
     </header>
     <br/>
     <div class="container">
-    <a href="alta.html" class='button-green'>Añadir nuevos datos</a><br/><br/>
+    <a href="alta.html" class='button-green'>Registrar nuevo usuario</a><br/><br/>
 
   	<table class="table table-hover table-bordered table-dark" >
       <thead>

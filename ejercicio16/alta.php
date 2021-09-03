@@ -15,6 +15,7 @@
       	$name = mysqli_real_escape_string($mysqli, $_POST['name']);
       	$age = mysqli_real_escape_string($mysqli, $_POST['age']);
       	$email = mysqli_real_escape_string($mysqli, $_POST['email']);
+        $pass = mysqli_real_escape_string($mysqli, $_POST['pass']);
 
       	// verificar campos vacios
       	if(empty($name) || empty($age) || empty($email)) {
@@ -31,16 +32,21 @@
       			echo "<font color='red'>El campo de EMAIL no fue llenado.</font><br/>";
       		}
 
+          if(empty($pass)) {
+      			echo "<font color='red'>El campo de PASSWORD no fue llenado.</font><br/>";
+      		}
+
       		echo "<br/><a class='button-grey' href='javascript:self.history.back();'>Volver</a>";
       	} else {
       		// si todos los campos fueron llenados...
 
       		//insertar datos en la base de datos
-      		$result = mysqli_query($mysqli, "INSERT INTO users(name,age,email) VALUES('$name','$age','$email')");
+          $pass=password_hash($_POST['pass'],PASSWORD_DEFAULT);
+      		$result = mysqli_query($mysqli, "INSERT INTO users(name,age,email,pass) VALUES('$name','$age','$email','$pass')");
 
       		//mostrar mensaje de exito
       		echo "<font color='green'>Datos agregados correctamente.";
-      		echo "<br/><a class='button-grey' href='index.php'>Ver resultado</a>";
+      		echo "<br/><a class='button-grey' href='login.html'>Iniciar Sesión</a>";
       	}
       }
     ?>
