@@ -1,0 +1,146 @@
+body {
+	background: url(../img/fondo8.jpg);
+	background-size: cover;
+}
+
+header{
+  width: 100%;
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0,.5);
+}
+
+.ventana {
+  background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	color: #fff;
+	padding: 35px;
+	width: 400px;
+	margin: 50px auto;
+ 	flex-direction: column;
+ 	align-items: center;
+  align-content: center;
+  font-size: 15px;
+}
+
+.button-accept{
+  width: 100%;
+  padding: 7px;
+  margin: 6px 0;
+  border: none;
+  color: #fff;
+  background-color: #444;
+}
+
+.button-accept:hover {
+  background-color: #fff;
+	color: #444;
+}
+
+.button-accept:focus{
+	color: #fff;
+	background: linear-gradient(to bottom, transparent, #444);
+  outline: none;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.contenedor__title /*IMPLEMENTAR METODOLOGIA BEM*/ {
+  margin-left: 30px;
+  font-size: 30px;
+	color: #FFFFFF;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.button-red{
+  color: #fff;
+  background-color: #f33;
+  border-radius: 2px;
+  padding: 3px;
+  border: .5px solid #f33;
+}
+
+.button-red:hover {
+  color: #f33;
+  background-color: #fff;
+  border: .5px solid #f33;
+  transition: all 250ms ease;
+}
+
+
+.button-red:focus{
+  background: linear-gradient(to bottom, #faa, #b00);
+  outline: none;
+  color: #fff;
+}
+
+.button-blue{
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 2px;
+  padding: 3px;
+  border: .5px solid #3498db;
+	margin-right: 5px;
+}
+
+.button-blue:hover {
+  color: #3498db;
+  background-color: #fff;
+  border: .5px solid #3498db;
+  transition: all 250ms ease;
+}
+
+.button-blue:focus{
+  background: linear-gradient(to bottom, #aed6f1, #2874a6);
+  outline: none;
+  color: #fff;
+}
+
+.button-green{
+  color: #fff;
+  background-color: #1abc9c;
+  border-radius: 2px;
+  padding: 3px;
+  border: .5px solid #1abc9c;
+}
+
+.button-green:hover {
+  color: #1abc9c;
+  background-color: #fff;
+  border: .5px solid #1abc9c;
+  transition: all 250ms ease;
+}
+
+.button-green:focus{
+  background: linear-gradient(to bottom, #a3e4d7,  #117864);
+  outline: none;
+  color: #fff;
+}
+
+.button-grey{
+  color: #fff;
+  background-color: #444;
+	border-radius: 2px;
+  padding: 3px;
+  border: .5px solid #444;
+  margin-left: 5px;
+}
+
+.button-grey:hover {
+	color: #444;
+  background-color: #fff;
+  border: .5px solid #444;
+  transition: all 250ms ease;
+}
+
+.button-grey:focus{
+  background: linear-gradient(to bottom, #aaa, #111);
+  outline: none;
+  color: #fff;
+}
