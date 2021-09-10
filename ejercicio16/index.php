@@ -1,4 +1,6 @@
 <?php
+  session_start();
+  $nombre = $_SESSION['nombre'];
   // incluir el archivo que conecta con la BD
   include_once("config.php");
 
@@ -16,7 +18,7 @@
 
   <body>
     <header>
-      <h1 class="contenedor__title">Ejercicio 16: Base de Datos</h1>
+      <h1 class="contenedor__title"><?php echo "Bienvenido $nombre"; ?></h1>
     </header>
     <br/>
     <div class="container">
