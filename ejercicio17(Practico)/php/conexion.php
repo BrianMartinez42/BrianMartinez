@@ -6,8 +6,8 @@
   $conexion = mysqli_connect("localhost", "root", "", "padron");
   $consulta =
   ("SELECT personas.nombre, apellido, colegios.nombre, direccion, numero
-  FROM personas JOIN colegios
-  WHERE (personas.colegio_id = colegios.colegio_id) AND (personas.dni='$dni') AND (personas.provincia='$prov') AND (personas.sexo='$radio')");
+  FROM personas, colegios, provincias
+  WHERE (personas.dni='$dni') AND (provincias.nombre='$prov') AND (personas.sexo='$radio')");
   $resultado = mysqli_query($conexion, $consulta);
 
   $filas=mysqli_num_rows($resultado);

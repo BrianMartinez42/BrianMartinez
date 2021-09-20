@@ -21,7 +21,7 @@ var respuesta = document.getElementById('respuesta');
 	      if(data === 'error'){
 	        respuesta.innerHTML = `
 	        <div class="" role="alert" >
-	          <h2>Datos incorrectos.</h2> <br><br>
+	          <h2>No se ha encontrado ningún registro con los datos ingresados.</h2> <br><br>
 						<input type="button" value="Volver a consultar" class="button-blue" onclick="location.reload()"/>
 	        </div>
 	        `
