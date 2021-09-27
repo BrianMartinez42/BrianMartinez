@@ -10,54 +10,48 @@
     <header>
       <h1 class="contenedor__title">REGISTRO NACIONAL DE ELECTORES</h1>
     </header>
-    <div class="" id="respuesta" style=" margin: 50px; height: 300px; width: auto; text-align: center;">
+    <div class="contenedor-contenido" id="respuesta">
       <div class="contenido-padron">
         <form class="" id="Formulario">
           <h2>Consulte sus datos</h2>
           <span class="">Documento: </span>
-          <input type="number" class="mi-input" placeholder="Documento sin puntos ni letras" name="DNI" required>
+          <input type="number" class="mi-input" placeholder="Documento sin puntos ni letras" name="dni" required>
           <br><br>
 
           <span class="">Sexo: </span>
           Masculino
           <input class="" type="radio" name="radiob" value="m" checked="">
           Femenino
-          <input class="" type="radio" name="radiob" value="n">
+          <input class="" type="radio" name="radiob" value="f">
           Indefinido
           <input class="" type="radio" name="radiob" value="i"><br><br>
 
-          <span class="">Provincia: </span>
-          <select class="mi-select" name="provincia">
-            <option selected>Buenos Aires</option>
-            <option>Catamarca</option>
-            <option>Chaco</option>
-            <option>Chubut</option>
-            <option>Córdoba</option>
-            <option>Corrientes</option>
-            <option>Entre Ríos</option>
-            <option>Formosa</option>
-            <option>Jujuy</option>
-            <option>La Pampa</option>
-            <option>La Rioja</option>
-            <option>Mendoza</option>
-            <option>Misiones</option>
-            <option>Neuquén</option>
-            <option>Río Negro</option>
-            <option>Salta</option>
-            <option>San Juan</option>
-            <option>San Luis</option>
-            <option>Santa Cruz</option>
-            <option>Santa Fe</option>
-            <option>Santiago del Estero</option>
-            <option>Tierra del Fuego</option>
-            <option>Tucumán</option>
-          </select>
-          <br><br>
+          <div class="contenido-padron__provincia">
+            <span class="">Provincia: </span>
+            <select class="mi-select" name="provincia" id="prov" onchange="ciudades()">
+              <option></option>
+            </select>
+            <br><br>
+          </div>
+
+          <div class="contenido-padron__ciudad">
+            <span class="">Ciudad: </span>
+            <select class="mi-select" name="ciudad" id="ciudad">
+              <option></option>
+            </select>
+            <br><br>
+          </div>
+
           <input type="submit" name="enviar" value="Consultar" class="button-blue">
         </form>
       </div>
-
     </div>
+
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
     <script src="js/fetch-bd.js"></script>
+    <script src="js/ciudades.js"></script>
   </body>
 </html>
