@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	console.log( "Documento cargado" );
+	$('.contenido-padron__ciudad').hide();
 	$.ajax({
 		type: "POST",
 		url: "./php/provincias.php",
