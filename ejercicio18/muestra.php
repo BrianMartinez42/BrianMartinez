@@ -17,4 +17,5 @@
   $auto4->mostrarInfo();
   // $auto4->encender();
   $auto4->estado();
+  
 ?>

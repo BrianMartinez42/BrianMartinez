@@ -24,7 +24,6 @@ header{
 .mi-select{
   outline: 0;
   box-shadow: none;
-  border-radius: .25em;
 	border: solid 1px #000;
   background-image: none;
   flex: 1;
@@ -40,20 +39,18 @@ header{
 
 .mi-select option{
 	background-color: #EEE;
-  color: #1AD;
+  color: #333333;
   font-weight: bold;
 }
 
 .mi-input{
   font-weight: bold;
-  /* font-size: 15px; */
   font-family: sans-serif;
   outline: 0;
   box-shadow: 0;
   background-color: #FFF;
   width: 22%;
   height: 35px;
-  border-radius: .25em;
   border: solid 1px #000;
   color: #000;
   text-align: left;
@@ -73,8 +70,7 @@ input[type=number] { -moz-appearance:textfield; }
 	width: auto;
 	color: #1C327D;
 	background-color: rgba(250, 250, 250,.5);
-	border: .5px solid #FFF;
-	border-radius: .7em;
+	border: none;
 	padding: 3px;
 }
 
@@ -82,22 +78,26 @@ input[type=number] { -moz-appearance:textfield; }
   color: #3498db;
   padding: 3px;
   background-color: #fff;
-  border: .5px solid #3498db;
+  border: .5px solid #fff;
 	margin-right: 5px;
 }
 
 .button-blue:hover {
   color: #fff;
   background-color: #3498db;
-  border: .5px solid #FFF;
+  border: .5px solid #3498db;
   transition: all 250ms ease;
 }
 
 .button-blue:focus{
-  background: linear-gradient(to bottom, #aed6f1, #2874a6);
+  background: #333333;
   outline: none;
-  border: .5px solid #3498db;
+  border: .5px solid #333333;
   color: #fff;
+}
+
+.datos{
+  color: #333333;
 }
 
 .contenedor-contenido{

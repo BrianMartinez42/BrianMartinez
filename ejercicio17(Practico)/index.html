@@ -13,21 +13,18 @@
     <div class="contenedor-contenido" id="respuesta">
       <div class="contenido-padron">
         <form class="" id="Formulario">
-          <h2>Consulte sus datos</h2>
-          <span class="">Documento: </span>
+          <h2 class="datos">Consulte sus datos</h2>
+          <span class="datos">Documento: </span>
           <input type="number" class="mi-input" placeholder="Documento sin puntos ni letras" name="dni" required>
           <br><br>
 
-          <span class="">Sexo: </span>
-          Masculino
-          <input class="" type="radio" name="radiob" value="m" checked="">
-          Femenino
-          <input class="" type="radio" name="radiob" value="f">
-          Indefinido
-          <input class="" type="radio" name="radiob" value="i"><br><br>
+          <span class="datos">Sexo: </span>
+          <span class="datos">Masculino:</span> <input class="" type="radio" name="radiob" value="m" checked="">
+          <span class="datos">Femenino:</span> <input class="" type="radio" name="radiob" value="f">
+          <span class="datos">Indefinido:</span> <input class="" type="radio" name="radiob" value="i"><br><br>
 
           <div class="contenido-padron__provincia">
-            <span class="">Provincia: </span>
+            <span class="datos">Provincia: </span>
             <select class="mi-select" name="provincia" id="prov" onchange="ciudades()">
               <option></option>
             </select>
