@@ -6,14 +6,9 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] { -moz-appearance:textfield; }
 
 
-.m{
-  background-color: green;
-}
-
-.f{
-  background-color: blue;
-}
-
-.i{
-  background-color: white;
+.contenido-respuesta{
+  text-align: center;
+  font-weight: 600;
+  color: #c0c0c0;
+  font-family: sans-serif;
 }

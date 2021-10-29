@@ -12,19 +12,32 @@ form.addEventListener('submit', function(e){
 	   method: 'POST',
 		 body: datos
 	 })
-	   .then( res => res.text())
-	   .then( data => {
-	     console.log(data)
-	     if(data === 'error'){
-	       respuesta.innerHTML = `
-	       <div class="" role="alert" >
-	         <h2>No existe.</h2>
-	       </div>
-	       `
-	     }else {
-	       respuesta.innerHTML = `
-	         ${data}
-	       `
-	     }
-	   })
+	 .then( res => res.json())
+	 .then( data => {
+	   console.log(data)
+		 switch (data.sexo) {
+	  	 case 'm':
+			 respuesta.style.backgroundColor="green";
+			 break;
+			 case 'f':
+			 respuesta.style.backgroundColor="blue";
+			 break;
+			 case 'i':
+			 respuesta.style.backgroundColor="white";
+			 break;
+		 }
+		 respuesta.innerHTML = `
+			<p>Nombre: ${data.nombre} </p>
+			<p>Apellido: ${data.apellido} </p>
+			<p>Edad: ${data.edad} </p>
+		 `
+	 })
+	 .catch(function(error){
+		 console.log("ERROR");
+		 console.log(error);
+		 respuesta.style.backgroundColor="red";
+		 respuesta.innerHTML = `
+		 	<h2>No existe.</h2>
+		 `
+	 })
 })

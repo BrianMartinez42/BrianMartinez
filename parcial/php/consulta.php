@@ -13,37 +13,39 @@
   $filas=mysqli_num_rows($resultado);
   if ($filas>0){
     $fila=mysqli_fetch_array($resultado);
-    if ($fila[3]=='i') {
-      echo ('
-          <div class="i" style="height: auto; width: auto; text-align: center;">
-                <h3 class="mb-0">Nombre: '.$fila[0].'</h3>
-
-                <h3 class="mb-0">Apellido: '.$fila[1].'</h3>
-
-                <h3 class="mb-0">Edad: '.$fila[2].'</h3>
-          </div>
-      ');
-    }elseif ($fila[3]=='f') {
-      echo ('
-          <div class="f" style="height: auto; width: auto; text-align: center;">
-                <h3 class="mb-0">Nombre: '.$fila[0].'</h3>
-
-                <h3 class="mb-0">Apellido: '.$fila[1].'</h3>
-
-                <h3 class="mb-0">Edad: '.$fila[2].'</h3>
-          </div>
-      ');
-    }elseif ($fila[3]=='m') {
-      echo ('
-          <div class="m" style="height: auto; width: auto; text-align: center;">
-                <h3 class="mb-0">Nombre: '.$fila[0].'</h3>
-
-                <h3 class="mb-0">Apellido: '.$fila[1].'</h3>
-
-                <h3 class="mb-0">Edad: '.$fila[2].'</h3>
-          </div>
-      ');
-    }
+    $datos = array('nombre' => $fila[0], 'apellido' => $fila[1], 'edad' => $fila[2], 'sexo' => $fila[3]);
+    echo json_encode($datos);
+    // if ($fila[3]=='i') {
+    //   echo ('
+    //       <div class="i" style="height: auto; width: auto; text-align: center;">
+    //             <h3 class="mb-0">Nombre: '.$fila[0].'</h3>
+    //
+    //             <h3 class="mb-0">Apellido: '.$fila[1].'</h3>
+    //
+    //             <h3 class="mb-0">Edad: '.$fila[2].'</h3>
+    //       </div>
+    //   ');
+    // }elseif ($fila[3]=='f') {
+    //   echo ('
+    //       <div class="f" style="height: auto; width: auto; text-align: center;">
+    //             <h3 class="mb-0">Nombre: '.$fila[0].'</h3>
+    //
+    //             <h3 class="mb-0">Apellido: '.$fila[1].'</h3>
+    //
+    //             <h3 class="mb-0">Edad: '.$fila[2].'</h3>
+    //       </div>
+    //   ');
+    // }elseif ($fila[3]=='m') {
+    //   echo ('
+    //       <div class="m" style="height: auto; width: auto; text-align: center;">
+    //             <h3 class="mb-0">Nombre: '.$fila[0].'</h3>
+    //
+    //             <h3 class="mb-0">Apellido: '.$fila[1].'</h3>
+    //
+    //             <h3 class="mb-0">Edad: '.$fila[2].'</h3>
+    //       </div>
+    //   ');
+    // }
   }
   else
   {
