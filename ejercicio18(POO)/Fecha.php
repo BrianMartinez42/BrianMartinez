@@ -4,7 +4,7 @@
       $anio = date("Y");
       $mes = date("m");
       $dia = date("d");
-       $dia .'/'. $mes .'/'. $anio;
+      echo $dia .'/'. $mes .'/'. $anio;
     }
   }
  ?>

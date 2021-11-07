@@ -8,7 +8,7 @@ class Persona{
   }
 
   public function apellido($apellido){
-    echo ", mi apellido es ".$apellido;
+    echo ", mi apellido es ".$apellido. "<br>";
   }
 
   public function pesar($peso,$nombre){
